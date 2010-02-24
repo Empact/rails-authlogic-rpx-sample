@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20091229052448) do
+ActiveRecord::Schema.define(:version => 20100224055517) do
 
   create_table "articles", :force => true do |t|
     t.string   "name"
@@ -56,6 +56,8 @@ ActiveRecord::Schema.define(:version => 20091229052448) do
     t.string   "photo_url"
   end
 
+  add_index "users", ["email"], :name => "index_users_on_email", :unique => true
   add_index "users", ["rpx_identifier"], :name => "index_users_on_rpx_identifier"
+  add_index "users", ["username"], :name => "index_users_on_username", :unique => true
 
 end
