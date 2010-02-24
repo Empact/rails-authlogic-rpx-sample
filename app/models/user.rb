@@ -6,7 +6,7 @@ class User < ActiveRecord::Base
 	
 	attr_accessible :username, :email, :password, :password_confirmation, :rpx_identifier
 
-	validates_uniqueness_of   :username, :case_sensitive => false
+	validates_uniqueness_of :username, :email, :case_sensitive => false
 
 	has_many :articles
 	has_many :comments
