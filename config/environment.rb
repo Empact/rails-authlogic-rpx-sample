@@ -21,7 +21,7 @@ Rails::Initializer.run do |config|
   # config.gem "aws-s3", :lib => "aws/s3"
   config.gem 'authlogic', :version => '>= 2.1.3'
   config.gem 'rpx_now', :version => '>= 0.6.13'
-  config.gem 'Empact-authlogic_rpx', :version => '>= 1.1.2'
+  config.gem 'Empact-authlogic_rpx', :lib => 'authlogic_rpx', :version => '>= 1.1.2'
 
   # Only load the plugins named here, in the order given (default is alphabetical).
   # :all can be used as a placeholder for all plugins not explicitly named
