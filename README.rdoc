@@ -1,5 +1,10 @@
 =  RAILS-AUTHLOGIC-RPX-SAMPLE
 
+== Changes
+
+This fork demonstrates the special use of Empact-authlogic_rpx to enable full-featured auto-registration
+without sacrificing database constraints.  See the use of UserSessionsController#create and the new_from_rpx view for details.
+
 == Purpose
 
 Demonstrates the use of Rails with Authlogic and Authlogic_RPX gems for authentication. This sample is intended as a guide for developers who are interested in using Authlogic_RPX authentication in their own applications.
